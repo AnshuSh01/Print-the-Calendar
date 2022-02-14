@@ -1,0 +1,14 @@
+import calendar #first import th built-in module named calendar to uese calendar attributes.
+def Calendar(year,month):
+    
+    if month>12:
+        return "Please Enter the Month Correctly\n"
+    else:
+        return calendar.month(year,month)
+if __name__ == '__main__':
+    year=int(input("Enter Year:"))
+    month=int(input("\nEnter Month:"))
+    cal=Calendar(year,month)
+    print(cal)
+ 
+ 
